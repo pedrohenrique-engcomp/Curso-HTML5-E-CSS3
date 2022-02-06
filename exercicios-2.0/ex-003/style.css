@@ -1,0 +1,21 @@
+@charset "UTF 8";
+
+body{
+    font-family: 'Work Sans','sans-serif';
+    
+    
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    text-decoration: underline;
+}
+h1{
+    /*font-family: 'Work Sans',sans-serif;
+    font-size: 3em;
+    font-style: italic;*/
+    /*Shorthand = Pequena Mão
+    -- Font Style --> Font Weight --> Font Size --> Font Family */
+    font: italic lighter  4em  fantasy ;
+
+}

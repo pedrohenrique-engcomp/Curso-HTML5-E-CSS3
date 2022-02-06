@@ -1,0 +1,38 @@
+@charset "UTF-8" ;
+
+h1{
+    height: 300px;
+    width: 300px;
+
+    background-color: rgb(139, 158, 158);
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(95, 76, 76);
+    /* border : 10px solid red */
+
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    /* padding : (top) 10px (right) 10px (bottom) 10px (left) 10px ;*/
+
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    /* margin : (top) 10px (right) 20px (bottom) 10px (left) 10px ;*/
+
+
+    outline-width: 5px;
+    outline-style: groove;
+    outline-color: darkred;
+
+    
+    
+}
+a{
+    border-width: 8px;
+    border-style: groove;
+    border-color: darkkhaki;
+}

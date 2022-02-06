@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+div{
+    display: inline-block;
+    background-color: lightblue;
+    text-align: center;
+    height: 12.5em;
+    width: 12.5em;
+    border: solid yellowgreen 1px ;
+
+}
+div:hover{
+    background-color: orangered;
+}
+div#d1 {
+    background-color: violet;
+
+}
+div#d2 {
+    background-color: wheat;
+
+}
+div#d3 {
+    background-color: tomato;
+
+}
+
+div#d4 {
+    font: bold 1em arial,helvetica ;
+    color: rgb(18, 4, 80);
+
+}

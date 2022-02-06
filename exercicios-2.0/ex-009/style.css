@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+a{
+  color: brown;
+  text-decoration: none;
+  font-weight: bolder;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+a:visited{
+    color: rgb(70, 2, 2);
+}
+a:active{
+    color: darkviolet;
+}
+a::after>{
+    content: ' [link] ';
+    text-decoration: none;
+    font-weight: 3em;
+    color: rgb(155, 153, 153);
+}
+
+.especial{
+    background-color: rgb(204, 100, 100);
+}
+.especial::before {
+    content: '⇨';
+}
+.especial::after{
+    color: rgb(70, 2, 2);
+    content: ' ⇦';
+}
+/*
+  # == id
+  . == class
+  : == pseudo-class
+  :: == pseudo-element
+  > == childreen
+*/
