@@ -17,6 +17,7 @@
         width: 500px;
         border-collapse: collapse;
         margin: 45px auto auto auto;
+        position: relative;
     }
     td , th {
         border: 1px solid black;
@@ -49,9 +50,32 @@
         border: 2px solid black;
         text-shadow: 1px 1px 0px black;
     }
+    tbody > tr:nth-child(odd){/*2n-1*/
+        background-color: white;
+    }
+    tbody > tr:nth-child(even){/*2n*/
+        background-color: lightgray;
+    }
+    thead > tr > th{
+        position: sticky;
+        top: 0px;
+        background-color: grey;
+        border-bottom: 1px solid black;
+    }
+    abbr{
+        text-decoration: none;
+    }
+    th > abbr:hover{
+        color: blue;
+        font-weight: bold;
+    }
+    td > abbr:hover{
+        color: red;
+        font-weight: bold;
+    }
 </style>
 <body>
-    <h1>Uso de Tabelas Grandes</h1>
+        <h1>Uso de Tabelas Grandes</h1>
     <!--
         Anatomia de Tabelas Grandes:
         TABLE
@@ -70,112 +94,255 @@
         <th class="menu" scope="col">Estado</th>
         <th class="menu" scope="col" style="width: 50px;">População</th>
         </thead>
-         <th>São Paulo</th>
-         <td> 46 649 132</td>
+
         <tbody>
+            <tr>
+                <th>
+                <abbr title="1*">
+                    São Paulo
+                </abbr>
+                </th>
+                <td>   
+                    <abbr title="Número de habitantes comparado a  Espanha  (46 439 864 habitantes)">46 649 132</abbr>
+                </td>
+            </tr>
          <tr>
-             <th> Minas Gerais</th>
-             <td> 21 411 923</td>
+            <th><abbr title="2*">Minas Gerais</abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Sri Lanka (20 675 000 habitantes)">21 411 923</abbr>
+                </td>
          </tr>
          <tr>
-             <th> Rio de Janeiro</th>
-             <td> 17 463 349</td>
+            <th><abbr title="3*">Rio de Janeiro</abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Países Baixos  (16 922 900 habitantes)">17 463 349</abbr>
+                </td>
          </tr>
          <tr>
-             <th>Bahia</th>
-             <td>14 985 284</td>
+             <th>
+             <abbr title="4*">
+                 Bahia
+             </abbr>
+            </th>
+             <td>  
+                 <abbr title="Número de habitantes comparado a Chade (14 037 000 habitantes)">14 985 284</abbr>
+                </td>
          </tr>
          <tr>
-             <th>Paraná</th>
-             <td> 11 597 484</td>
+             <th>
+             <abbr title="5*">
+                 Paraná
+             </abbr>
+            </th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a  Bolívia  (11 410 651 habitantes)">11 597 484</abbr>
+                </td>
          </tr>
          <tr>
-             <th>Rio Grande do Sul</th>
-             <td> 11 466 630</td>
+             <th>
+             <abbr title="6*">
+                 Rio Grande do Sul
+             </abbr>
+            </th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Bélgica  (11 250 659 habitantes)">11 466 630</abbr>
+                </td>
          </tr>
          <tr>
-             <th>Pernambuco</th>
-             <td> 9 674 793</td>
+            <th>
+             <abbr title="7*">
+                 Pernambuco
+             </abbr>
+            </th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a  Bielorrússia  (9 485 300 habitantes)">9 674 793</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Ceará</th>
-             <td> 9 240 580</td>
+             <th>
+             <abbr title="8*">
+                 Ceará
+             </abbr>
+            </th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a  Emirados Árabes Unidos (9 157 000 habitantes)">9 240 580</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Pará</th>
-             <td> 8 777 124</td>
+             <th>
+             <abbr title="9*">
+                 Pará
+             </abbr>
+            </th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a  Áustria (8 602 112 habitantes)">8 777 124</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Santa Catarina</th>
-             <td> 7 338 473</td>
+             <th>
+             <abbr title="10*">
+                Santa Catarina
+             </abbr>
+            </th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a  Sérvia  (7 114 393 habitantes)">7 338 473</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Goiás</th>
-             <td> 7 206 589</td>
+             <th>
+             <abbr title="11*">
+                 Goiás
+             </abbr>
+            </th>
+             <td><abbr title="Número de habitantes comparado a Paraguai (7 003 406 habitantes)">7 206 589</abbr></td>
          </tr>
          <tr>
-             <th>Maranhão</th>
-             <td> 7 153 262</td>
+             <th>
+             <abbr title="12*">
+                 Maranhão
+             </abbr>
+            </th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Paraguai (7 003 406 habitantes)">7 153 262</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Amazonas</th>
-             <td> 4 269 995</td>
+             <th>
+             <abbr title="13*">
+                 Amazonas
+             </abbr>
+            </th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Líbano (4 168 000 habitantes)">4 269 995</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Espirito Santo</th>
-             <td> 4 108 508</td>
+             <th>
+             <abbr title="14*">
+                 Espirito Santo
+             </abbr>
+            </th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Líbano (4 168 000 habitantes)">4 108 508</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Paraíba</th>
-             <td> 4 059 905</td>
+             <th>
+             <abbr title="15*">
+                 Paraíba
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Líbano (4 168 000 habitantes)">4 059 905</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Mato Grosso</th>
-             <td> 3 567 234</td>
+             <th>
+             <abbr title="16*">
+                 Mato Grosso
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Uruguai (3 415 866 habitantes)">3 567 234</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Rio Grande do Norte</th>
-             <td> 3 560 903</td>
+             <th>
+             <abbr title="17*">
+                 Rio Grande do Norte
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Uruguai (3 415 866 habitantes)">3 560 903</abbr>
+                 </td>
+                 
          </tr>
          <tr>
-             <th>Alagoas</th>
-             <td> 3 365 351</td>
+             <th>
+             <abbr title="18*">
+                 Alagoas
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Uruguai (3 415 866 habitantes)">3 365 351</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Piauí</th>
-             <td> 3 289 290</td>
+             <th>
+             <abbr title="19*">
+                 Piauí
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Kuwait (3 268 431 habitantes)">3 289 290</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Distrito Federal</th>
-             <td> 3 094 325</td>
+             <th>
+             <abbr title="20*">
+                 Distrito Federal
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a  Lituânia (2 900 787 habitantes)">3 094 325</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Mato Grosso do Sul</th>
-             <td> 2 839 188</td>
+             <th>
+             <abbr title="21*">
+                 Mato Grosso do Sul
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Jamaica (2 717 991 habitantes)">2 839 188</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Sergipe</th>
-             <td> 2 338 474</td>
+             <th>
+             <abbr title="22*">
+                 Sergipe
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Namíbia (2 280 700 habitantes)">2 338 474</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Rondônia</th>
-             <td> 1 815 278</td>
+             <th>
+             <abbr title="23*">
+                 Rondônia
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Gabão (1 725 000 habitantes)">1 815 278</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Tocantins</th>
-             <td> 1 607 363</td>
+             <th>
+             <abbr title="24*">
+                 Tocantins
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Bahrein (1 359 800 habitantes)">1 607 363</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Acre</th>
-             <td> 906 876</td>
+             <th>
+             <abbr title="25*">
+                 Acre
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Fiji (859 178 habitantes)">906 876</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Amapá</th>
-             <td> 877 613</td>
+             <th>
+             <abbr title="26*">
+                 Amapá
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a Fiji (859 178 habitantes)">877 613</abbr>
+             </td>
          </tr>
          <tr>
-             <th>Roraima</th>
-             <td> 652 713</td>
+             <th>
+             <abbr title="27*">
+                 Roraima
+             </abbr></th>
+             <td>   
+                 <abbr title="Número de habitantes comparado a  Luxemburgo (562 958 habitantes)">652 713</abbr>
+             </td>
          </tr>
         </tbody>
 
