@@ -33,6 +33,3 @@
 
 <a href="https://pedrohenrique-engcomp.github.io/Curso-HTML5-E-CSS3-2.5/exercicios-2.0/ex-013/fundo01.html">Executar Exercicio 013<a>
 
-<a href="[def]">Executar Exercicio 014<a>
-
-[def]: https://pedrohenrique-engcomp.github.io/Curso-HTML5-E-CSS3-2.5/exercicios-2.0/ex-014/tabela01.html
