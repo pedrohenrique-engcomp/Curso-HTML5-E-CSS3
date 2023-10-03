@@ -11,7 +11,7 @@
 
  <a href="https://pedrohenrique-engcomp.github.io/Curso-HTML5-E-CSS3-2.5/exercicios-2.0/ex-001/cor01.html">Executar Exercicio 001<a>
 
- <a href="https://pedrohenrique-engcomp.github.io/Curso-HTML5-E-CSS3-2.5/exercicios-2.0/ex-002/cor02.html">Executar Exercicio 002<a>
+ <a href="https://pedrohenrique-engcomp.github.io/Curso-HTML5-E-CSS3-2.5/exercicios-2.0/ex-002/cor01.html">Executar Exercicio 002<a>
 
  <a href="https://pedrohenrique-engcomp.github.io/Curso-HTML5-E-CSS3-2.5/exercicios-2.0/ex-003/index.html">Executar Exercicio 003<a>
 
@@ -35,4 +35,4 @@
 
 <a href="[def]">Executar Exercicio 014<a>
 
-[def]: ttps://pedrohenrique-engcomp.github.io/Curso-HTML5-E-CSS3-2.5/exercicios-2.0/ex-014/tabela01.html
+[def]: https://pedrohenrique-engcomp.github.io/Curso-HTML5-E-CSS3-2.5/exercicios-2.0/ex-014/tabela01.html
